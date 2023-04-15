@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "nS・GUI  |  Tapping-Legends-X", HidePremium = false, IntroText = "nS-GUI | Carregando...", SaveConfig = true, ConfigFolder = "nS-FILE-KEY"})
 
-loadstring (game:HttpGet("https://raw.githubusercontent.com/Grayy12/KeySys/main/Protected%20(4).lua",true))()"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Grayy12/KeySys/main/Protected%20(4).lua",true))()
 
 OrionLib:MakeNotification({
 	Name = "Discord:",
@@ -26,7 +26,7 @@ while os.clock() - startTime < 5 do
     wait(0.2)
     end
     wait(1)
-    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/nS-GUI/nS-GUI/main/nS-GUI-ORION.lua"))()
     end
 end
 
