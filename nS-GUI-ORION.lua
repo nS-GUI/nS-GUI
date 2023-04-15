@@ -1,7 +1,7 @@
 if game.PlaceId == 8750997647 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "nS・GUI  |  Tapping-Legends-X", HidePremium = false, IntroText = "nS-GUI | Carregando...", SaveConfig = true, ConfigFolder = "nS-FILE-CONFIG"})
+local Window = OrionLib:MakeWindow({Name = "nS・GUI  |  Tapping-Legends-X", HidePremium = false, IntroText = "nS-GUI | Carregando...", IntroEnabled = false, SaveConfig = true, ConfigFolder = "nS-FILE-CONFIG"})
 
 OrionLib:MakeNotification({
 	Name = "Discord:",
