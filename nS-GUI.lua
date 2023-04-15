@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
 	Name = "Discord:",
 	Content = "discord.gg/invite",
 	Image = "rbxassetid://13132648697",
-	Time = 10
+	Time = 5
 })
 
 _G.Key = "nScripted"
