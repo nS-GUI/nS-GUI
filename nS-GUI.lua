@@ -13,16 +13,14 @@ _G.Key = "nScripted"
 _G.KeyInput = "string"
 
 function CheckKey()
+  OrionLib:Destroy()
 OrionLib:MakeNotification({
 	Name = "Sucesso!",
 	Content = "Você ejetou o script.",
 	Image = "rbxassetid://13132648697",
 	Time = 10
 })
-
-
-      OrionLib:Destroy()
-      wait(2)
+    wait(3)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/nS-GUI/nS-GUI/main/nS-GUI-ORION.lua"))()
     end
 
