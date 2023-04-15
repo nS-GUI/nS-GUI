@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
 	Name = "Discord:",
 	Content = "discord.gg/invite",
 	Image = "rbxassetid://13132648697",
-	Time = 25
+	Time = 10
 })
 
 _G.Key = "nScripted"
@@ -17,7 +17,7 @@ OrionLib:MakeNotification({
 	Name = "Sucesso!",
 	Content = "Você ejetou o script.",
 	Image = "rbxassetid://13132648697",
-	Time = 25
+	Time = 10
 })
 
 
@@ -79,7 +79,7 @@ Callback = <function> - The function of the textbox.
 
 
 
-Tab:AddButton({
+MainTab:AddButton({
 	Name = "Login",
 	Callback = function()
       		if _G.KeyInput == _G.Key then
