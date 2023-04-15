@@ -41,7 +41,7 @@ function incorreto()
 	Name = "Key Incorreta",
 	Content = "Você usou a key errada.",
 	Image = "rbxassetid://13132648697",
-	Time = 25
+	Time = 10
 })
   end
 
