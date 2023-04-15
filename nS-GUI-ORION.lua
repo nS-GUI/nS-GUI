@@ -7,7 +7,7 @@ OrionLib:MakeNotification({
 	Name = "Discord:",
 	Content = "discord.gg/invite",
 	Image = "rbxassetid://13132648697",
-	Time = 25
+	Time = 10
 })
 
 
