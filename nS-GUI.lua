@@ -23,16 +23,6 @@ OrionLib:MakeNotification({
 
       OrionLib:Destroy()
       wait(2)
-local startTime = os.clock()
-while os.clock() - startTime < 5 do
-    loadingLabel.Text = "nS・GUI | Loading."
-    wait(0.2)
-    loadingLabel.Text = "nS・GUI | Loading.."
-    wait(0.2)
-    loadingLabel.Text = "nS・GUI | Loading..."
-    wait(0.2)
-    end
-    wait(1)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/nS-GUI/nS-GUI/main/nS-GUI-ORION.lua"))()
     end
 
