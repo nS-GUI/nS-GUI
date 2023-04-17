@@ -1,7 +1,7 @@
-if game.PlaceId == 8750997647 then
+if game.PlaceId == 9285238704 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "nS・GUI  |  Tapping-Legends-X", HidePremium = false, IntroText = "nS-GUI | Carregando...", IntroEnabled = false, SaveConfig = true, ConfigFolder = "nS-FILE-CONFIG"})
+local Window = OrionLib:MakeWindow({Name = "nS・GUI  |  Race-Clicker", HidePremium = false, IntroText = "nS-GUI | Carregando...", IntroEnabled = false, SaveConfig = true, ConfigFolder = "nS-FILE-CONFIG"})
 
 OrionLib:MakeNotification({
 	Name = "Discord:",
@@ -11,6 +11,52 @@ OrionLib:MakeNotification({
 })
 
 
+-- Value
+
+_G.autofarm = true
+
+
+-- function
+
+function autofarm()
+  while _G.autofarm == true do
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ClickService"):WaitForChild("RF"):WaitForChild("Click"):InvokeServer()
+      wait(.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+      end
+  	end
+
+
+-- Tabs
+
+local FarmTab = Window:MakeTab({
+	Name = "Hacking",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local ConfigTab = Window:MakeTab({
+	Name = "Config",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+-- Buttons
+
+ConfigTab:AddButton({
+	Name = "DestroirPainel (Panic)",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+FarmTab:AddToggle({
+	Name = "(CLICK) Autofarm",
+	Default = false,
+	Callback = function(Value)
+		_G.autofarm = Value
+    autofarm()
+	end    
+})
 
 
 
