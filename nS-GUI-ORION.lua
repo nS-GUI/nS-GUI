@@ -21,7 +21,7 @@ _G.autofarm = true
 function autofarm()
   while _G.autofarm == true do
 game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ClickService"):WaitForChild("RF"):WaitForChild("Click"):InvokeServer()
-      wait(.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+      wait(.0001)
       end
   	end
 
